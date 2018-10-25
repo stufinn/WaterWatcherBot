@@ -1,0 +1,19 @@
+{
+  "name": "waterwatcher",
+  "version": "1.0.0",
+  "description": "Bot that tweets drinking water advisories",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "Stu Finn",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "twitter": "^1.7.1"
+  }
+}
