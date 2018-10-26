@@ -22,7 +22,6 @@ var tweetParameters = {
     status: tweet
 };
 
-
 twitter.post('statuses/update',tweetParameters, (err,response)=> {
     if (err) {
         console.log('Something went wrong:', err);
