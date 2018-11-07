@@ -3,14 +3,14 @@
 const fs = require('fs');
 const tweet = require('./tweet');
 
+const postTweets = () => {
 
-
-let fileData = JSON.parse( fs.readFileSync('data/DWA.json') );
-
-
-setInterval( () => {
+    let fileData = JSON.parse( fs.readFileSync('data/DWA.json') );
     tweet.tweetActive(fileData);
-} , 30000);
 
+};
 
+module.exports = {
+    postTweets
+};
 
