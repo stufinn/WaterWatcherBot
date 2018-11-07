@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 var app = express();
 
 //see https://www.npmjs.com/package/node-schedule for more information
-var j = schedule.scheduleJob('30 12 * * *', () => {
+var j = schedule.scheduleJob('35 12 * * *', () => {
     appFile.postTweets();
 });
 
