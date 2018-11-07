@@ -67,7 +67,7 @@ const randomActive = (DWAarray) => {
     let randomActiveEntry = activeDWAs[randomNumber(activeDWAs.length)];
     // date = dateToText(randomActiveEntry["Date Set"]);
     // console.log(`The community of ${randomActiveEntry.Community} has has had a boil water advisory since ${dateToText(randomActiveEntry["Date Set"])}`);  
-    return(`The community of ${randomActiveEntry.Community} has been under a boil water advisory since ${dateToText(randomActiveEntry["Date Set"])}.`);
+    return(`The community of ${randomActiveEntry.Community} has been under a boil water advisory since ${dateToText(randomActiveEntry["Date Set"])}. #FNWater`);
     //To add: calculate time since it started
     // 
 };
@@ -78,7 +78,7 @@ const randomAny = (dataArray) => {
     // if (randomEntry["Date Revoked"] === 'None') {
     //     revokedDate = 'today';
     // }
-    console.log(`The community of ${randomEntry.Community} had a drinking water advisory from ${dateToText(randomEntry["Date Set"])} until ${dateToText(revokedDate)}.`);
+    console.log(`The community of ${randomEntry.Community} had a drinking water advisory from ${dateToText(randomEntry["Date Set"])} until ${dateToText(revokedDate)}.#FNWater`);
 
 }
 
