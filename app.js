@@ -3,9 +3,12 @@
 const fs = require('fs');
 const tweet = require('./tweet');
 
+
+// parses data from the DWA JSON file
 const postTweets = () => {
 
     let fileData = JSON.parse( fs.readFileSync('data/DWA.json') );
+    //call "tweet" module with ALL file data
     tweet.tweetActive(fileData);
 
 };
