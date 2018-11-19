@@ -13,6 +13,9 @@ var app = express();
 appFile.postTweets();
 // });
 
-app.listen(port, () => {  //see port variable defined near top of app
+
+var server = app.listen(port, () => {  //see port variable defined near top of app
     console.log(`Server is up and running on port ${port}`);
 });
+
+server.close();
