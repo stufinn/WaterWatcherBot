@@ -10,9 +10,10 @@ const twitter = new Twitter({
     access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-
+// tweet about an active water advisory
 const tweetActive = (data) => {
 
+    // retrieve a random active water advisory from the sortData module
     var tweet = sortData.randomActive(data);
 
     var tweetParameters = {
