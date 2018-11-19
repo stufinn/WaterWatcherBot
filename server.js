@@ -10,7 +10,13 @@ var app = express();
 
 //see https://www.npmjs.com/package/node-schedule for more information
 // var j = schedule.scheduleJob('35 12 * * *', () => {
-appFile.postTweets();
+
+
+// temporatily disabled on Nov 19
+// appFile.postTweets();
+
+
+
 // });
 
 
