@@ -11,12 +11,13 @@ const twitter = new Twitter({
 });
 
 // tweet about an active water advisory
+//input: ALL file data
 const tweetActive = (data) => {
 
-    // retrieve a random active water advisory from the sortData module
-    var tweet = sortData.randomActive(data);
+    // retrieve a random active water advisory from data with sortData module
+    let tweet = sortData.randomActive(data);
 
-    var tweetParameters = {
+    let tweetParameters = {
         status: tweet
     };
 
